@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  tap-chart:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-10-23T17:52:32.27070918+03:30"
+    description: A Helm chart for Kubernetes
+    digest: 899562a5715ad2c0d0eed2d7c74568f1298240bf331721fb9063f54c61c43051
+    name: tap-chart
+    type: application
+    urls:
+    - https://plutocholia.github.io/helm-chart/tap-chart-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-10-23T17:52:32.269791548+03:30"
