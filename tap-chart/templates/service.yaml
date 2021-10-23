@@ -1,0 +1,16 @@
+{{- if .Values.service }}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "mychart.fullname" . }}
+  labels:
+    app: {{ include "mychart.labels" . }}
+  namespace: {{ include "mychart.namespace" . }}
+spec:
+  type: {{ .Values.service.type }}
+  {{-  with .Values.service.port }}
+  ports:
+    {{- toYaml . | nindent 2 }}
+  {{- end }}
+{{- end }}
